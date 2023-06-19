@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2>Business Contacts</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Contact Name</th>
+            <th>Contact Number</th>
+            <th>Email Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(function(contact) { %>
+            <tr>
+              <td><%= contact.name %></td>
+              <td><%= contact.number %></td>
+              <td><%= contact.email %></td>
+              <td>
+                <a href="/contacts/update/<%= contact._id %>" class="btn btn-primary btn-sm">Update</a>
+                <form method="POST" action="/contacts/delete/<%= contact._id %>" class="d-inline">
+                  <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

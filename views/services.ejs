@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>Services</h1>
-
-    <div class="service">
-      <img src="/images/service1.jpeg" alt="Service 1">
-      <h2>Web Development</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar hendrerit lacinia.</p>
-    </div>
-
-    <div class="service">
-      <img src="/images/service2.jpeg" alt="Service 2">
-      <h2>Responsive Design</h2>
-      <p>Integer nec dui sit amet felis mollis tempor. Nam consectetur eu mi a pharetra.</p>
-    </div>
-
-    <div class="service">
-      <img src="/images/service3.jpeg" alt="Service 3">
-      <h2>UX/UI Design</h2>
-      <p>Nullam a augue vel erat luctus ultricies eget ac tortor. Quisque vitae lacinia elit.</p>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2023 Linh Yousef. All rights reserved.</p>
-  </footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Services</h1>
+        <div class="content">
+            <div class="service">
+                <img src="/images/service1.jpg" alt="Service 1">
+                <h2>General Programming</h2>
+                <p>
+                    We offer general programming services to help you develop custom software solutions 
+                    tailored to your needs.
+                </p>
+            </div>
+            <div class="service">
+                <img src="/images/service2.jpg" alt="Service 2">
+                <h2>Web Development</h2>
+                <p>
+                    Our web development services include building responsive and user-friendly websites 
+                    using the latest technologies.
+                </p>
+            </div>
+            <div class="service">
+                <img src="/images/service3.jpg" alt="Service 3">
+                <h2>Mobile Apps</h2>
+                <p>
+                    We specialize in developing mobile applications for various platforms, providing you 
+                    with innovative and intuitive mobile solutions.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <<p>&copy; <%= new Date().getFullYear() %> Linh Yousef. All rights reserved.</p>
+    </footer>
 </body>
 </html>

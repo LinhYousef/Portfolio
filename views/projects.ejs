@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>Projects</h1>
-
-    <div class="project">
-      <img src="/images/project1.jpg" alt="Project 1">
-      <h2>Project 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar hendrerit lacinia.</p>
-    </div>
-
-    <div class="project">
-      <img src="/images/project2.jpg" alt="Project 2">
-      <h2>Project 2</h2>
-      <p>Integer nec dui sit amet felis mollis tempor. Nam consectetur eu mi a pharetra.</p>
-    </div>
-
-    <div class="project">
-      <img src="/images/project3.jpg" alt="Project 3">
-      <h2>Project 3</h2>
-      <p>Nullam a augue vel erat luctus ultricies eget ac tortor. Quisque vitae lacinia elit.</p>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2023 Linh Yousef. All rights reserved.</p>
-  </footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Projects</h1>
+        <div class="content">
+            <div class="project">
+                <img src="/images/project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget est consequat, 
+                    viverra ligula a, varius magna. Suspendisse potenti.
+                </p>
+            </div>
+            <div class="project">
+                <img src="/images/project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>
+                    Sed eleifend, metus non rhoncus iaculis, felis nisi malesuada tellus, vel auctor velit mi 
+                    eu neque. Nulla non dictum nisl, et feugiat elit.
+                </p>
+            </div>
+            <div class="project">
+                <img src="/images/project3.jpg" alt="Project 3">
+                <h2>Project 3</h2>
+                <p>
+                    Mauris quis lectus non neque rhoncus tincidunt. Sed iaculis lectus quis pulvinar viverra. 
+                    Vivamus quis mauris eget nibh ullamcorper aliquam.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> Linh Yousef. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Linh Yousef Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-  
-    <main class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a passionate web developer with experience in building responsive and user-friendly websites.</p>
-        <p>Feel free to explore my portfolio and contact me for any inquiries or project collaborations.</p>
-        <a href="/about" class="btn">Learn More</a>
+    <main>
+        <h1>About Me</h1>
+        <div class="content">
+            <img src="/images/Profile.jpg" alt="Profile Picture">
+            <p>
+                Hi, I'm Linh Yousef, a passionate web developer. I have a strong background in front-end development 
+                and love creating beautiful and responsive websites. With several years of experience in the field, 
+                I have worked on various projects and gained expertise in HTML, CSS, and JavaScript. 
+                I'm always eager to learn new technologies and stay up-to-date with the latest trends in web development.
+            </p>
+            <p>
+                If you're looking for a dedicated web developer who can bring your ideas to life, 
+                feel free to get in touch with me. I'd be thrilled to collaborate on your next project!
+            </p>
+        </div>
     </main>
-
     <footer>
-        <p>
-            © 2023 Linh Yousef. All rights reserved.
-        </p>
+        <p>&copy; <%= new Date().getFullYear() %> Linh Yousef. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
